@@ -10,7 +10,34 @@ for letter in string.letters:
     print("The letter at index %i is %s" % (i, letter))
     i = i + 1
 ```
+```py
+synatx: enumerate(iterable, start=0)
+Parameters:
+Iterable: any object that supports iteration
+Start: the index value from which the counter is 
+              to be started, by default it is 0
+l1 = ["eat", "sleep", "repeat"]
+s1 = "geek"
+  
+# creating enumerate objects
+obj1 = enumerate(l1)
+obj2 = enumerate(s1)
+  
+print ("Return type:", type(obj1))
+print (list(enumerate(l1)))
+  
+# changing start index to 2 from 0
+print (list(enumerate(s1, 2)))
 
+Return type: 
+[(0, 'eat'), (1, 'sleep'), (2, 'repeat')]
+[(2, 'g'), (3, 'e'), (4, 'e'), (5, 'k')]
+
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+txt3 = "My name is {}, I'm {}".format("John",36)
+
+```
 Bonus points for mentioning `enumerate` and use of `str.format`.
 
 <div align="right">
